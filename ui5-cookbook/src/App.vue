@@ -21,23 +21,23 @@
       
       <v-list dense nav>
         <v-subheader>Menü</v-subheader>
-
-        <v-list-item link> 
+        
+        <v-list-item> 
           <v-list-item-content>
-            <v-list-item-title>
-              <router-link to="/foo">Grundlagen</router-link>
-            </v-list-item-title>
+
+              <router-link to="/foo" class="link">Go to Home</router-link>
+  
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item>
           <v-list-item-content>
-            <v-list-item-title>
-              Frameworks
-            </v-list-item-title>
+
+              <router-link to="/grundlagen" class="link">Grundlagen</router-link>
+
           </v-list-item-content>
         </v-list-item>
-
       </v-list>
+
     </v-navigation-drawer>
 
     <v-app-bar
@@ -48,7 +48,7 @@
         v-if="primaryDrawer.type !== 'permanent'"
         @click.stop="primaryDrawer.model = !primaryDrawer.model"
       ></v-app-bar-nav-icon>
-
+      <v-img :src="require('./assets/logo.png')" max-height="45" max-width="45" contain></v-img>
       <v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>
     </v-app-bar>
 
@@ -56,12 +56,11 @@
       <v-container fluid>
         <v-layout align-center justify-center>
           <v-flex xs10>
-            <router-view/>
+            <router-view></router-view>
           </v-flex>
         </v-layout>
       </v-container>
     </v-content>
-
     <v-footer
       :inset="footer.inset"
       app
@@ -93,6 +92,14 @@
 <style scoped>
   .lobster{
     font-family: "Lobster";
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .link{
+    color: black;
   }
 
 </style>

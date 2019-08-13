@@ -1,25 +1,32 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
-import 'vuetify/dist/vuetify.min.css'
-import Router from 'vue-router'
+
+//Components to create Routes
 import home from '@/components/home'
+import grundlagen from '@/components/grundlagen'
+
+//Vuetify Design Library
 import vuetify from './plugins/vuetify';
+import 'vuetify/dist/vuetify.min.css'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(VueRouter)
 
-Vue.use(Router),
+const routes = [
+  {path: '/foo', component: home},
+  {path: '/grundlagen', component: grundlagen}
+]
+
+const router = new VueRouter({
+  routes
+})
 
 new Vue({
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: home
-    }
-  ]
-})
+
+
