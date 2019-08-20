@@ -5,6 +5,8 @@ import App from './App.vue'
 //Components to create Routes
 import home from '@/components/home'
 import grundlagen from '@/components/grundlagen'
+import architektur from '@/components/architektur'
+import tools from '@/components/tools'
 
 //Vuetify Design Library
 import vuetify from './plugins/vuetify';
@@ -14,8 +16,10 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter)
 
 const routes = [
-  {path: '/foo', component: home},
-  {path: '/grundlagen', component: grundlagen}
+  {path: '/home', component: home},
+  {path: '/grundlagen', component: grundlagen},
+  {path: '/architecture', component: architektur},
+  {path: '/tools', component: tools}
 ]
 
 const router = new VueRouter({

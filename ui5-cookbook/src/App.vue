@@ -10,6 +10,7 @@
       app
       overflow
     >
+      <br/>
       <v-text-field
         solo
         prepend-inner-icon="search"
@@ -19,37 +20,54 @@
 
       <v-divider></v-divider>
       
-      <v-list dense nav>
         <v-subheader>Menü</v-subheader>
-        
-        <v-list-item> 
-          <v-list-item-content>
-
-              <router-link to="/foo" class="link">Go to Home</router-link>
-  
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-content>
-
-              <router-link to="/grundlagen" class="link">Grundlagen</router-link>
-
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+        <v-list>
+          <v-list-item>
+            <v-list-item-icon><v-icon>mdi-home</v-icon></v-list-item-icon>
+            <v-list-item-content><router-link to="/home" class="link">Go to Home</router-link></v-list-item-content>
+          </v-list-item>
+          <v-list-group prepend-icon="mdi-basecamp" value="true">
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>Grundlagen</v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item>
+              <v-list-item-content><router-link to="/grundlagen" class="link router_margin">Fiori & UI5</router-link></v-list-item-content>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content><router-link to="/architecture" class="link router_margin">Architektur</router-link></v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+          <v-list-group prepend-icon="mdi-code-braces" value="true">
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>Entwicklung</v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item>
+              <v-list-item-content><router-link to="/tools" class="link router_margin">Tools</router-link></v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+        </v-list>        
 
     </v-navigation-drawer>
 
     <v-app-bar
       :clipped-left="primaryDrawer.clipped"
       app
+      color="primary"
     >
       <v-app-bar-nav-icon
         v-if="primaryDrawer.type !== 'permanent'"
         @click.stop="primaryDrawer.model = !primaryDrawer.model"
+        dark
       ></v-app-bar-nav-icon>
+
       <v-img :src="require('./assets/logo.png')" max-height="45" max-width="45" contain></v-img>
       <v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <img src="./assets/germany.svg" height="20px" width="20px"/>
     </v-app-bar>
 
     <v-content>
@@ -64,9 +82,11 @@
     <v-footer
       :inset="footer.inset"
       app
+      dark
     >
       <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
       <span class="px-4">Lukas Giesler</span>
+      <span class="px-4"><v-icon>mdi-format-section</v-icon>Impressum</span>
     </v-footer>
   </v-app>
 </template>
@@ -92,6 +112,7 @@
 <style scoped>
   .lobster{
     font-family: "Lobster";
+    color: white;
   }
 
   a{
@@ -102,4 +123,7 @@
     color: black;
   }
 
+  .router_margin{
+    margin-left: 25%;
+  }
 </style>
