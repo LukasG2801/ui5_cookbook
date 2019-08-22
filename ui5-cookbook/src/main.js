@@ -7,6 +7,7 @@ import home from '@/components/home'
 import grundlagen from '@/components/grundlagen'
 import architektur from '@/components/architektur'
 import tools from '@/components/tools'
+import odata from '@/components/OData'
 
 //Vuetify Design Library
 import vuetify from './plugins/vuetify';
@@ -19,7 +20,8 @@ const routes = [
   {path: '/home', component: home},
   {path: '/grundlagen', component: grundlagen},
   {path: '/architecture', component: architektur},
-  {path: '/tools', component: tools}
+  {path: '/tools', component: tools},
+  {path: '/odata', component: odata}
 ]
 
 const router = new VueRouter({

@@ -38,6 +38,9 @@
             <v-list-item>
               <v-list-item-content><router-link to="/architecture" class="link router_margin">Architektur</router-link></v-list-item-content>
             </v-list-item>
+            <v-list-item>
+              <v-list-item-content><router-link to="/odata" class="link router_margin">OData</router-link></v-list-item-content>
+            </v-list-item>
           </v-list-group>
           <v-list-group prepend-icon="mdi-code-braces" value="true">
             <template v-slot:activator>
@@ -56,7 +59,7 @@
     <v-app-bar
       :clipped-left="primaryDrawer.clipped"
       app
-      color="primary"
+      color="blue accent-4"
     >
       <v-app-bar-nav-icon
         v-if="primaryDrawer.type !== 'permanent'"
@@ -79,7 +82,7 @@
         </v-layout>
       </v-container>
     </v-content>
-    <v-footer
+    <!--<v-footer
       :inset="footer.inset"
       app
       dark
@@ -87,7 +90,7 @@
       <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
       <span class="px-4">Lukas Giesler</span>
       <span class="px-4"><v-icon>mdi-format-section</v-icon>Impressum</span>
-    </v-footer>
+    </v-footer>-->
   </v-app>
 </template>
 

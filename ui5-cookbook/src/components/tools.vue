@@ -109,6 +109,7 @@ export default {
 <style scoped>
     h1{
         font-weight: lighter;
+        margin-top: 50px;
     }
 
     h2{
@@ -116,6 +117,7 @@ export default {
       margin-bottom: 50px;
       margin-top: 50px;
     }
+    
     
     a{
       text-decoration: none;
