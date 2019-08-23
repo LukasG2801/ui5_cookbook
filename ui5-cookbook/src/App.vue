@@ -67,8 +67,8 @@
         dark
       ></v-app-bar-nav-icon>
 
-      <v-img :src="require('./assets/logo.png')" max-height="45" max-width="45" contain></v-img>
-      <v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>
+      <v-img :src="require('./assets/HatchfulExport-All (1)/logo_transparent.png')" max-height="120" max-width="120"  contain></v-img>
+      <!--<v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>-->
       <v-spacer></v-spacer>
       <img src="./assets/germany.svg" height="20px" width="20px"/>
     </v-app-bar>
@@ -93,7 +93,7 @@
     </v-footer>-->
   </v-app>
 </template>
-
+    
 <script>
   export default {
     data: () => ({
