@@ -26,7 +26,8 @@
             <v-list-item-icon><v-icon>mdi-home</v-icon></v-list-item-icon>
             <v-list-item-content><router-link to="/home" class="link">Go to Home</router-link></v-list-item-content>
           </v-list-item>
-          <v-list-group prepend-icon="mdi-basecamp" value="true">
+          
+          <v-list-group prepend-icon="mdi-basecamp" isActive="false" value="false">
             <template v-slot:activator>
               <v-list-item-content>
                 <v-list-item-title>Grundlagen</v-list-item-title>
@@ -42,7 +43,8 @@
               <v-list-item-content><router-link to="/odata" class="link router_margin">OData</router-link></v-list-item-content>
             </v-list-item>
           </v-list-group>
-          <v-list-group prepend-icon="mdi-code-braces" value="true">
+          
+          <v-list-group prepend-icon="mdi-code-braces" value="true" active-class="v-item--disabled">
             <template v-slot:activator>
               <v-list-item-content>
                 <v-list-item-title>Entwicklung</v-list-item-title>
@@ -52,6 +54,26 @@
               <v-list-item-content><router-link to="/tools" class="link router_margin">Tools</router-link></v-list-item-content>
             </v-list-item>
           </v-list-group>
+          
+          <v-list-group prepend-icon="mdi-code-tags" value="true">
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>SAP WEB IDE</v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item>
+              <v-list-item-content><router-link to="/webide_newproject" class="link router_margin">Neues Projekt anlegen</router-link></v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+
+          <v-list-group prepend-icon="mdi-cloud" value="true">
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>SAP Cloud Plattform</v-list-item-title>
+              </v-list-item-content>
+            </template>
+          </v-list-group>
+        
         </v-list>        
 
     </v-navigation-drawer>

@@ -8,6 +8,7 @@ import grundlagen from '@/components/grundlagen'
 import architektur from '@/components/architektur'
 import tools from '@/components/tools'
 import odata from '@/components/OData'
+import webide_newproject from '@/components/WEBIDE_NewProject'
 
 //Vuetify Design Library
 import vuetify from './plugins/vuetify';
@@ -21,7 +22,8 @@ const routes = [
   {path: '/grundlagen', component: grundlagen},
   {path: '/architecture', component: architektur},
   {path: '/tools', component: tools},
-  {path: '/odata', component: odata}
+  {path: '/odata', component: odata},
+  {path: '/webide_newproject', component: webide_newproject}
 ]
 
 const router = new VueRouter({
