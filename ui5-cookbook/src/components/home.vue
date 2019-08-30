@@ -155,7 +155,7 @@
       
       <v-card-actions>
         <v-btn text>Teilen</v-btn>
-        <v-btn text to="/architecture" color="blue accent-4">Weiterlesen</v-btn>
+        <v-btn text to="/webide_newproject" color="blue accent-4">Weiterlesen</v-btn>
         <div class="flex-grow-1"></div>
         <v-btn icon @click="show4 = !show4">
           <v-icon>{{ show4 ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</v-icon>
