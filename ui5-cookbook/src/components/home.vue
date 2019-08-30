@@ -104,12 +104,11 @@
           </v-card-text>
         </div>
       </v-expand-transition>
-    
     </v-card>
     </v-col>
 
 <v-col>
-    <!--A Card -->
+    <!--Architektur Card -->
     <v-card class="mx auto" max-width="344">
       
       <v-img src="../assets/card_image_architektur.jpg" height="200px"></v-img>
@@ -140,6 +139,39 @@
     
     </v-card>
     </v-col>
+
+    <v-col>
+    <!--Architektur Card -->
+    <v-card class="mx auto" max-width="344">
+      
+      <v-img src="../assets/card_image_new_project.jpg" height="200px"></v-img>
+      
+      <v-card-title>
+        <div>
+          <p>Anlegen einer neuen App</p>
+        </div>
+        <span class="grey--text subtitle-1">Es gibt mehrere Möglichkeiten ...</span>
+      </v-card-title>
+      
+      <v-card-actions>
+        <v-btn text>Teilen</v-btn>
+        <v-btn text to="/architecture" color="blue accent-4">Weiterlesen</v-btn>
+        <div class="flex-grow-1"></div>
+        <v-btn icon @click="show4 = !show4">
+          <v-icon>{{ show4 ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</v-icon>
+        </v-btn>
+      </v-card-actions>
+      
+      <v-expand-transition>
+        <div v-show="show4">
+          <v-card-text class="justify">
+            Wenn Sie eine neue App in der SAP WEB IDE anlegen möchten, dann gibt es dafür mehrere Möglichkeiten. Der Artikel zeigt ihnen welche.
+          </v-card-text>
+        </div>
+      </v-expand-transition>
+    
+    </v-card>
+    </v-col>
     </v-row>
     </v-container>
   </div>
@@ -154,7 +186,8 @@ export default {
       show: false,
       show1: false,
       show2: false,
-      show3: false
+      show3: false,
+      show4: false
     }
   }
 }
