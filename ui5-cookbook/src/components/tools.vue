@@ -52,7 +52,7 @@
     </blockquote>
     <br/>
     <br/>
-    <h2>Entwicklung des Backend</h2>
+    <h2>Tools zur Entwicklung des Backend</h2>
     <v-container class="pa-2" fluid style="margin-bottom: 50px;">
       <v-row>
         <v-col>
@@ -60,6 +60,10 @@
           Die normale Vorgehensweise für Fiori Apps ist generell, dass diese Daten aus dem SAP-System verarbeiten. 
           Die Datenbeschaffung erfolgt also im SAP-System selbst. Dadurch werden keine weiteren Tools benötigt und vorgestellt. Sinnvoller ist es, Transaktionen im SAP-System zu nennen, die 
           zu hilfreichen Werkzeugen führen. 
+          <br/>
+          <br/>
+          Die einzelnen Transaktionen sind allerdings sehr komplex und sollten in eigenen Artikeln erklärt werden. Deshalb führen die Transaktionen in der Tabelle zu den entsprechenden Artikeln, 
+          welche die Transaktionen jeweils einzeln ins genaueste betrachten und deren Funktionsweise erklären.
         </blockquote>
       </v-col>
       <v-col>
@@ -72,7 +76,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>SEGW</td>
+              <td><router-link style="color: white;" to="/segw">SEGW</router-link></td>
               <td>SAP Gateway Service Builder <i>Anlegen und Programmieren von OData-Services</i></td>
             </tr>
             <tr>
@@ -122,4 +126,5 @@ export default {
     a{
       text-decoration: none;
     }
+
 </style>

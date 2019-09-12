@@ -53,6 +53,7 @@
             <v-list-item>
               <v-list-item-content><router-link to="/tools" class="link router_margin">Tools</router-link></v-list-item-content>
             </v-list-item>
+            
           </v-list-group>
           
           <v-list-group prepend-icon="mdi-code-tags" value="true">
@@ -92,7 +93,9 @@
       <v-img :src="require('./assets/HatchfulExport-All (1)/logo_transparent.png')" max-height="120" max-width="120"  contain></v-img>
       <!--<v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>-->
       <v-spacer></v-spacer>
+      <button style="color:white; margin-right: 20px;">Impressum</button>
       <img src="./assets/germany.svg" height="20px" width="20px"/>
+      
     </v-app-bar>
 
     <v-content>

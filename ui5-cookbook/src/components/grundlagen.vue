@@ -51,6 +51,7 @@ export default {
 
     h1{
         font-weight: lighter;
+        margin-top: 20px;
     }
 
     .image{
