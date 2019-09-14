@@ -13,11 +13,15 @@ import webide_newproject from '@/components/WEBIDE_NewProject'
 import segw from '@/components/segw'
 
 //Vuetify Design Library
-import vuetify from './plugins/vuetify';
+import vuetify from './plugins/vuetify'
 import 'vuetify/dist/vuetify.min.css'
+
+//Highlight.js
+import VueHighlightJs from 'vue-highlightjs'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter)
+Vue.use(VueHighlightJs)
 
 
 const routes = [
