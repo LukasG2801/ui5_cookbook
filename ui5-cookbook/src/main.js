@@ -11,6 +11,7 @@ import tools from '@/components/tools'
 import odata from '@/components/OData'
 import webide_newproject from '@/components/WEBIDE_NewProject'
 import segw from '@/components/segw'
+import impressum from '@/components/impressum'
 
 //Vuetify Design Library
 import vuetify from './plugins/vuetify'
@@ -31,7 +32,8 @@ const routes = [
   {path: '/tools', component: tools},
   {path: '/odata', component: odata},
   {path: '/webide_newproject', component: webide_newproject},
-  {path: '/segw', component: segw}
+  {path: '/segw', component: segw},
+  {path: '/impressum', component: impressum}
 ]
 
 Vue.config.productionTip = false 

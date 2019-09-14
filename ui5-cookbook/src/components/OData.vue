@@ -24,23 +24,16 @@
     <v-container fluid>
       <v-row>
         <v-col width="50%">
-          <pre v-highlightjs>
-            <code class="json" style="text-align: left;">
-              {"widget": {
-                "debug": "on",
-                "window": {
-                  "title": "Sample Konfabulator Widget",
-                  "name": "main_window",
-                  "width": 500,
-                  "height": 500
-                },
-                "image"
-              }}
-            </code>
-          </pre>
+          <figure>
+            <img src="../assets/odata/json_screenshot.png" height="500px"/>
+            <figcaption><i>Darstellung der Daten im JSON-Format</i></figcaption>
+          </figure>
         </v-col>
         <v-col>
-          <code></code>
+          <figure>
+            <img src="../assets/odata/xml_screenshot.png" height="500px"/>
+            <figcaption><i>Darstellung der Daten im XML-Format</i></figcaption>
+          </figure>
         </v-col>
       </v-row>
     </v-container>

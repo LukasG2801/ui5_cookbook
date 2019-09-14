@@ -90,10 +90,10 @@
         dark
       ></v-app-bar-nav-icon>
 
-      <v-img :src="require('./assets/HatchfulExport-All (1)/logo_transparent.png')" max-height="120" max-width="120"  contain></v-img>
-      <!--<v-toolbar-title class="lobster">UI5-Cookbook</v-toolbar-title>-->
+      <!--macht das Logo zu einem Link zur Homepage-->
+      <router-link to="/home"><v-img :src="require('./assets/HatchfulExport-All (1)/logo_transparent.png')" max-height="120" max-width="120"  contain></v-img></router-link>
       <v-spacer></v-spacer>
-      <button style="color:white; margin-right: 20px;">Impressum</button>
+      <router-link to="/impressum"><button style="color:white; margin-right: 20px;">Impressum</button></router-link>
       <img src="./assets/germany.svg" height="20px" width="20px"/>
       
     </v-app-bar>
