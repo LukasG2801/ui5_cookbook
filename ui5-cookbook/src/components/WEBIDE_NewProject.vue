@@ -39,6 +39,21 @@
         <img src="../assets/webide_newproject/webide_workspace.png" class="image">
         <figcaption>Screenshot eines komplett leeren Arbeitsbereichs</figcaption>
       </figure>
+      Hier kann jetzt mit der Entwicklung einer Fiori App begonnen werden. Wenn bereits Projekte oder Apps angelegt wurden bzw. entwickelt wurden (nur die eigenen), dann sind diese ebenfalls hier aufgelistet
+      können hier weiter bearbeitet werden. Beispielhaft im Screenshot der Ordner "Cookbook", der aber einfach nur so angelegt wurde um zu veranschaulichen wie Projekte dargestellt werden, 
+      es handelt sich hier nicht um ein Entwicklungsprojekt bzw. eine App. Um jetzt ein neues Projekt anzulegen, wählen sie zunächst in der linken oberen Ecke "File"->"New" 
+      <br/>
+      <figure>
+        <img src="../assets/webide_newproject/webide_file_new.png" class="image">
+        <figcaption></figcaption>
+      </figure>
+      Der darauffolgende Dialog bietet nun verschiedene Möglichkeiten, was angelegt werden soll. Generell möchte ich auf alle Möglichkeiten eingehen, möchte aber nicht chronologisch vorgehen, sondern mit 
+      "Project from Template" beginnen. Dafür wurden jeweils eigene Kapitel angelegt.
+      <br/>
+      <br/>
+      <ul class="link-list">
+        <li><router-link to="/webide_projectfromtemplate">Project from Template</router-link></li>
+      </ul>
     </v-container>
   </div>
 
@@ -86,5 +101,9 @@ export default {
     figcaption{
         font-style: italic;
         margin-bottom: 50px;
+    }
+
+    .link-list {
+      list-style-type: none;
     }
 </style>

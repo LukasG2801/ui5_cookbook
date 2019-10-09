@@ -13,6 +13,9 @@ import webide_newproject from '@/components/WEBIDE_NewProject'
 import segw from '@/components/segw'
 import impressum from '@/components/impressum'
 
+//Components WEBIDE
+import webide_projectfromtemplate from '@/components/WEBIDE/WEBIDE_ProjectFromTemplate'
+
 //Vuetify Design Library
 import vuetify from './plugins/vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -33,7 +36,8 @@ const routes = [
   {path: '/odata', component: odata},
   {path: '/webide_newproject', component: webide_newproject},
   {path: '/segw', component: segw},
-  {path: '/impressum', component: impressum}
+  {path: '/impressum', component: impressum},
+  {path: '/webide_projectfromtemplate', component: webide_projectfromtemplate}
 ]
 
 Vue.config.productionTip = false 

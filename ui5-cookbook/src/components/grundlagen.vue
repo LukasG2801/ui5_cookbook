@@ -2,7 +2,7 @@
   <div class="grundlagen" style="margin-bottom: 100px;">
     <h1>Fiori & UI5</h1>
     <br/>
-    <h2 class="rubik">Fiori</h2>
+    <a name="Fiori"><h2 class="rubik">Fiori</h2></a>
     <br/>
     <blockqoute class="justify">
         Mit SAP Fiori hat SAP einen Umbruch begonnen und versucht damit die Wertigkeit der Mensch-Maschine-Kommunikation deutlich zu erhöhen.
@@ -24,7 +24,7 @@
     <br/>
     <br/>
     <br/>
-    <h2>UI5</h2>
+    <a name="ui5"><h2>UI5</h2></a>
     <br/>
     <blockqoute>
         SAP Fiori Apps sind grundsätzlich an Richtlinien und Designvorgaben von SAP gebunden. Nur so kann eine einheitliche Designsprache gewährleistet werden und sichergestellt werden, dass sich der Nutzer in jeder Fiori Anwendung direkt zurecht findet.
