@@ -9,7 +9,7 @@ import grundlagen from '@/components/grundlagen'
 import architektur from '@/components/architektur'
 import tools from '@/components/tools'
 import odata from '@/components/OData'
-import webide_newproject from '@/components/WEBIDE_NewProject'
+import webide_newproject from '@/components/WEBIDE/WEBIDE_NewProject'
 import segw from '@/components/segw'
 import impressum from '@/components/impressum'
 
