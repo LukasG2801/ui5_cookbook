@@ -52,7 +52,7 @@
       <br/>
       <br/>
       <ul class="link-list">
-        <li><router-link to="/webide_projectfromtemplate">Project from Template</router-link></li>
+        <li><v-icon color="blue">mdi-arrow-right-bold-hexagon-outline</v-icon><router-link to="/webide_projectfromtemplate"> Project from Template</router-link></li>
       </ul>
     </v-container>
   </div>

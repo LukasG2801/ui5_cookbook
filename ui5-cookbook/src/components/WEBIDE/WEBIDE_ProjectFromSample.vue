@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>SAP WEB IDE <b>></b> New Project from Template</h1>
+    <h1>SAP WEB IDE <b>></b> New Project from Sample Application</h1>
   </div>
 </template>
 

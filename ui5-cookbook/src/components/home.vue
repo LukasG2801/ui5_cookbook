@@ -172,6 +172,73 @@
     
     </v-card>
     </v-col>
+
+    <v-col>
+    <!--New Project from Template Card -->
+    <v-card class="mx auto" max-width="344">
+      
+      <v-img src="../assets/card_image_projectfromtemplate.jpg" height="200px"></v-img>
+      
+      <v-card-title>
+        <div>
+          <p>New Project from Template</p>
+        </div>
+        <span class="grey--text subtitle-1">Einfach nach Vorlage</span>
+      </v-card-title>
+      
+      <v-card-actions>
+        <v-btn text>Teilen</v-btn>
+        <v-btn text to="/webide_projectfromtemplate" color="blue accent-4">Weiterlesen</v-btn>
+        <div class="flex-grow-1"></div>
+        <v-btn icon @click="show5 = !show5">
+          <v-icon>{{ show5 ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</v-icon>
+        </v-btn>
+      </v-card-actions>
+      
+      <v-expand-transition>
+        <div v-show="show5">
+          <v-card-text class="justify">
+            Eine Möglichkeit, eine Fiori App einfach aus verschiedenen Vorlagen zu erstellen.
+          </v-card-text>
+        </div>
+      </v-expand-transition>
+    
+    </v-card>
+    </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+    <!--New Project from Sample Application Card -->
+    <v-card class="mx auto" max-width="344">
+      
+      <v-img src="../assets/card_image_projectfromsample.jpg" height="200px"></v-img>
+      
+      <v-card-title>
+        <div>
+          <p>New Project from Sample Application</p>
+        </div>
+        <span class="grey--text subtitle-1">Muss nur angepasst werden</span>
+      </v-card-title>
+      
+      <v-card-actions>
+        <v-btn text>Teilen</v-btn>
+        <v-btn text to="/webide_projectfromtemplate" color="blue accent-4">Weiterlesen</v-btn>
+        <div class="flex-grow-1"></div>
+        <v-btn icon @click="show6 = !show6">
+          <v-icon>{{ show6 ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</v-icon>
+        </v-btn>
+      </v-card-actions>
+      
+      <v-expand-transition>
+        <div v-show="show6">
+          <v-card-text class="justify">
+            Die Erstellung der App folgt einfach einem vorhandenen Beispiel und muss nur adaptiert werden.
+          </v-card-text>
+        </div>
+      </v-expand-transition>
+    
+    </v-card>
+      </v-col>
     </v-row>
     </v-container>
   </div>
@@ -187,7 +254,9 @@ export default {
       show1: false,
       show2: false,
       show3: false,
-      show4: false
+      show4: false,
+      show5: false,
+      show6: false
     }
   }
 }

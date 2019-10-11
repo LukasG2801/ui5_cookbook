@@ -17,6 +17,18 @@
         label="Suche"
         class="ma-3"
       ></v-text-field>
+      <v-btn
+        v-scroll="onScroll"
+        v-show="fab"
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="blue"
+        @click="toTop">
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
 
       <v-divider></v-divider>
       
@@ -66,7 +78,10 @@
               <v-list-item-content><router-link to="/webide_newproject" class="link router_margin">Neues Projekt anlegen</router-link></v-list-item-content>
             </v-list-item>
             <v-list-item>
-              <v-list-item-content><router-link to="/webide_projectfromtemplate" class="link router_margin">Project from Template</router-link></v-list-item-content>
+              <v-list-item-content><router-link to="/webide_projectfromtemplate" class="link router_margin"><i>Project from Template</i></router-link></v-list-item-content>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content><router-link to="/webide_projectfromsample" class="link router_margin"><i>Project from Sample Application</i></router-link></v-list-item-content>
             </v-list-item>
           </v-list-group>
 
@@ -97,6 +112,7 @@
       <router-link to="/home"><v-img :src="require('./assets/HatchfulExport-All (1)/logo_transparent.png')" max-height="120" max-width="120"  contain></v-img></router-link>
       <v-spacer></v-spacer>
       <router-link to="/impressum"><button style="color:white; margin-right: 20px;">Impressum</button></router-link>
+      <a href="https://github.com/gieslerl/ui5_cookbook" target="blank" style="margin-right: 20px;"><v-icon dark>mdi-github-circle</v-icon></a>
       <img src="./assets/germany.svg" height="20px" width="20px"/>
       
     </v-app-bar>
@@ -136,7 +152,19 @@
       footer: {
         inset: false,
       },
+      fab: true
     }),
+
+    methods: {
+      onScroll(e) {
+        if(typeof window === 'undefined') return
+        const top = window.pageYOffset || e.target.scrollTop || 0 
+        this.fab = top > 20
+      },
+      toTop() {
+        this.$vuetify.goTo(0)
+      }
+    }
   }
 </script>
 
